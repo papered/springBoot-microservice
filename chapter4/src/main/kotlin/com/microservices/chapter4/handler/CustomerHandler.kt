@@ -1,5 +1,7 @@
-package com.microservices.chapter4
+package com.microservices.chapter4.handler
 
+import com.microservices.chapter4.Customer
+import com.microservices.chapter4.service.CustomerService
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.BodyInserters.fromObject
@@ -9,7 +11,6 @@ import org.springframework.web.reactive.function.server.ServerResponse.*
 import org.springframework.web.reactive.function.server.bodyToMono
 import reactor.core.publisher.Mono
 import reactor.core.publisher.switchIfEmpty
-import reactor.core.publisher.toMono
 
 @Component
 class CustomerHandler(val customerService: CustomerService) {

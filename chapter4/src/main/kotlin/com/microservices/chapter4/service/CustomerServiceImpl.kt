@@ -1,7 +1,7 @@
-package com.microservices.chapter4
+package com.microservices.chapter4.service
 
+import com.microservices.chapter4.Customer
 import org.springframework.stereotype.Component
-import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 import reactor.core.publisher.toFlux
 import reactor.core.publisher.toMono

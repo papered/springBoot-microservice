@@ -1,5 +1,6 @@
-package com.microservices.chapter4
+package com.microservices.chapter4.service
 
+import com.microservices.chapter4.Customer
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
