@@ -17,7 +17,7 @@ class CustomerRouter(val customerHandler: CustomerHandler) {
                 POST("/", customerHandler::create)
             }
 
-            "customers".nest {
+            "/customers".nest {
                 GET("/", customerHandler::search)
             }
         }

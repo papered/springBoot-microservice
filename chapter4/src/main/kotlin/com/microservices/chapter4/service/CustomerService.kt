@@ -9,5 +9,5 @@ interface CustomerService {
 
     fun searchCustomers(nameFilter: String): Flux<Customer>
 
-    fun createCustomer(customerMono: Mono<Customer>): Mono<*>
+    fun createCustomer(customerMono: Mono<Customer>): Mono<Customer>
 }
